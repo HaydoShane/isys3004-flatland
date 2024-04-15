@@ -13,7 +13,20 @@
     <div id="words">
         <!-- Text Will Go Here -->
     </div>
-    <div id="square" onclick="document.getElementById('square').style.background = 'green'"></div>
+    <div id="square" onclick="makeGreen()" onmouseover="makeGrey()" onmouseout="makeRed()"></div> 
+
+    <script>
+      function makeGreen(){
+        document.getElementById('square').style.background = 'green';
+      }
+      function makeRed(){
+        document.getElementById('square').style.background = 'red';
+      }
+      function makeGrey(){
+        document.getElementById('square').style.background = 'grey';
+      }
+    
+    </script>
 </body>
 
 </html>
