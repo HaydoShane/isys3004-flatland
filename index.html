@@ -13,19 +13,15 @@
     <div id="words">
         <!-- Text Will Go Here -->
     </div>
-    <div id="square" onclick="makeGreen()" onmouseover="makeGrey()" onmouseout="makeRed()"></div> 
+    <div id="square" onclick="changeColour('green')" onmouseover="changeColour('grey')" onmouseout= "changeColour('red')"
+    ></div> 
 
     <script>
-      function makeGreen(){
-        document.getElementById('square').style.background = 'green';
+      let square = document.getElementById('square')
+
+      function changeColour(colour){
+        square.style.background = colour;
       }
-      function makeRed(){
-        document.getElementById('square').style.background = 'red';
-      }
-      function makeGrey(){
-        document.getElementById('square').style.background = 'grey';
-      }
-    
     </script>
 </body>
 
